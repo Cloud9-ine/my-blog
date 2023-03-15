@@ -1,0 +1,21 @@
+<div>
+  <h3>Education Background: </h3>
+
+  <div
+    *ngFor="let edu of educations"
+    class="education"
+  >
+    <h4>{{ edu.school }}</h4>
+
+    <div class="row">
+      <p>{{ "Degree: " + edu.degree }}</p>
+      <p>{{ edu.start_date + " - " + edu.end_date }}</p>
+    </div>
+
+    <div class="row">
+      <p>{{ "Major: " + edu.major }}</p>
+      <p>{{ edu.place }}</p>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="content">
+
+  <div class="buttons-bar">
+    <span>Which page are you interested in?</span>
+    <button
+      class="btn"
+      *ngFor="let tag of content_tags"
+      (click)="onClick(tag)"
+    >
+      {{ tag }}
+    </button>
+  </div>
+
+  <div *ngIf="display_tag == 'Resume'">
+    <app-resume></app-resume>
+  </div>
+
+  <div *ngIf="display_tag == 'Games'">
+    <app-games></app-games>
+  </div>
+
+  <div *ngIf="display_tag == 'Others'">
+    <h2>Other component to be added!</h2>
+  </div>
+
+</div>

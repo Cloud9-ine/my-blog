@@ -1,0 +1,12 @@
+.education {
+  background: #f4f4f4;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  width: 500px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
