@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Experience } from "../../Experience";
+import { ExperienceLists } from "../../experience-lists";
+
 
 @Component({
   selector: 'app-experience',
@@ -6,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
-
+  experiences: Experience[] = ExperienceLists;
 }

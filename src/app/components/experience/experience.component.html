@@ -1,4 +1,27 @@
 <div>
   <h3>Work Experience: </h3>
-  <p>Coding development, To be added.</p>
+  <div
+    *ngFor="let exp of experiences"
+    class="experience"
+  >
+    <div class="row">
+      <p><b>{{ exp.title }}</b></p>
+      <a href="{{ exp.link }}">
+        <p><b>{{ exp.company}}</b></p>
+      </a>
+    </div>
+
+    <div class="row">
+      <p>{{ exp.start_date + " - " + exp.end_date }}</p>
+      <p>{{ exp.place }}</p>
+    </div>
+
+    <div>
+      <p *ngFor="let item of exp.description">
+        {{ item }}
+      </p>
+    </div>
+
+  </div>
 </div>
+
