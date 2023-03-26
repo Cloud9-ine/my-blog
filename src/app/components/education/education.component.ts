@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Education } from "../../Education";
 import { EducationLists } from "../../education-lists";
 
@@ -8,5 +8,7 @@ import { EducationLists } from "../../education-lists";
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent {
+  @Input() description?: string;
+
   educations: Education[] = EducationLists;
 }

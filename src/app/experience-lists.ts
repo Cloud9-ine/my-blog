@@ -2,9 +2,19 @@ import { Experience } from "./Experience";
 
 export const ExperienceLists: Experience[] = [
   {
+    company: "CVS Health",
+    title: "Software Engineer",
+    start_date: "03/2023",
+    end_date: "Now",
+    place: "Arlington, VA, USA",
+    description: [
+    ],
+    link: "https://www.cvshealth.com/",
+  },
+  {
     company: "CertiK",
     title: "Software Engineer Intern",
-    start_date: "06/2020",
+    start_date: "06/2022",
     end_date: "08/2022",
     place: "New York City, NY, USA",
     description: [
@@ -22,9 +32,9 @@ export const ExperienceLists: Experience[] = [
     end_date: "08/2022",
     place: "Baltimore, MD, USA",
     description: [
-      "- Implement Roadmap pages based on React and TypeScript",
-      "- Create and Update backend schemas with MongoDB",
-      "- Deploy on Vercel",
+      "- Implemented Roadmap pages based on React and TypeScript",
+      "- Created and Updated backend schemas with MongoDB",
+      "- Deployed on Vercel",
     ],
     link: "https://ucredit.me/",
   },

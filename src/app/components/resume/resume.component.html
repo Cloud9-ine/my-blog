@@ -1,5 +1,16 @@
-<div>
-  <h2>My Resume: </h2>
-  <app-education></app-education>
-  <app-experience></app-experience>
+<div class="title">
+  <h2>{{ description + ":" }}</h2>
+</div>
+
+<div class="container">
+
+  <div class="column">
+      <app-education [description]="eduSection.description"></app-education>
+      <app-skill description="Technical Skills"></app-skill>
+  </div>
+
+  <div class="column">
+    <app-experience [description]="expSection.description"></app-experience>
+  </div>
+
 </div>

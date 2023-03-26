@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Experience } from "../../Experience";
 import { ExperienceLists } from "../../experience-lists";
 
@@ -9,5 +9,7 @@ import { ExperienceLists } from "../../experience-lists";
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
+  @Input() description?: string;
+
   experiences: Experience[] = ExperienceLists;
 }

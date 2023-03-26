@@ -1,11 +1,14 @@
 <div>
-  <h3>Education Background: </h3>
+  <h3>{{ description + ":"}} </h3>
 
   <div
     *ngFor="let edu of educations"
     class="education"
   >
-    <p><b>{{ edu.school }}</b></p>
+
+    <a href="{{ edu.link }}">
+      <p><b>{{ edu.school }}</b></p>
+    </a>
 
     <div class="row">
       <p>{{ "Degree: " + edu.degree }}</p>

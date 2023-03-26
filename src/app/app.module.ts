@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from "@angular/router";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,9 @@ import { EducationComponent } from './components/education/education.component';
 import { ContentComponent } from './components/content/content.component';
 import { GamesComponent } from './components/games/games.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { SkillComponent } from './components/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { ExperienceComponent } from './components/experience/experience.componen
     EducationComponent,
     ContentComponent,
     GamesComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    NavigationBarComponent,
+    IntroComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

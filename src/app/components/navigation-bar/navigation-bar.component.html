@@ -1,0 +1,13 @@
+<div>
+
+  <h3>Navigator</h3>
+
+  <nav>
+    <ul>
+      <li *ngFor="let sec of section_list">
+        <button (click)="navigateToSection(sec)">{{ sec }}</button>
+      </li>
+    </ul>
+  </nav>
+
+</div>

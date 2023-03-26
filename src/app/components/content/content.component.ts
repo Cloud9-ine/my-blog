@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Section } from '../../Section';
 
 @Component({
   selector: 'app-content',
@@ -14,6 +15,11 @@ export class ContentComponent {
   display_tag: string = "Resume";
   text: string = "Resume";
   color: string = "Green";
+
+  resumeSec: Section = {
+    name: 'Resume',
+    description: 'My Resume'
+  }
 
   onClick(tag: string) {
     this.display_tag = tag;

@@ -1,7 +1,7 @@
 <div class="content">
 
   <div class="buttons-bar">
-    <span>Which page are you interested in?</span>
+    <span><b>Which page are you interested in?</b></span>
     <button
       class="btn"
       *ngFor="let tag of content_tags"
@@ -11,8 +11,8 @@
     </button>
   </div>
 
-  <div *ngIf="display_tag == 'Resume'">
-    <app-resume></app-resume>
+  <div *ngIf="display_tag == resumeSec.name">
+    <app-resume [description]='resumeSec.description'></app-resume>
   </div>
 
   <div *ngIf="display_tag == 'Games'">

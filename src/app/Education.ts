@@ -5,4 +5,5 @@ export interface Education {
   start_date: string;
   end_date: string;
   place: string;
+  link?: string;
 }
