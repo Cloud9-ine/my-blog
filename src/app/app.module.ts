@@ -15,6 +15,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { SkillComponent } from './components/skill/skill.component';
+import { NotesComponent } from './components/notes/notes.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SkillComponent } from './components/skill/skill.component';
     ExperienceComponent,
     NavigationBarComponent,
     IntroComponent,
-    SkillComponent
+    SkillComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,

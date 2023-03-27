@@ -18,9 +18,9 @@ export const ExperienceLists: Experience[] = [
     end_date: "08/2022",
     place: "New York City, NY, USA",
     description: [
-      "- Implemented and Modified Frontend features based on React",
-      "- Researched, Implemented and Integrated Full-Stack features into the product with Node.js",
-      "- Conducted Unit and End-to-End Tests for features with Jest & Cypress",
+      "- Implemented and Modified frontend features based on React",
+      "- Researched, Implemented and Integrated full-Stack features into the product with Node.js",
+      "- Conducted Unit and End-to-End tests for features with Jest & Cypress",
       "- Deployed with workers in AWS",
     ],
     link: "https://www.certik.com/",
@@ -32,7 +32,7 @@ export const ExperienceLists: Experience[] = [
     end_date: "08/2022",
     place: "Baltimore, MD, USA",
     description: [
-      "- Implemented Roadmap pages based on React and TypeScript",
+      "- Implemented roadmap pages based on React and TypeScript",
       "- Created and Updated backend schemas with MongoDB",
       "- Deployed on Vercel",
     ],
@@ -46,8 +46,8 @@ export const ExperienceLists: Experience[] = [
     place: "Baltimore, MD, USA",
     description: [
       "- Launched Office Hours for 2+ hours per week and answer in-person questions from the very basic concepts to tough problems from the assignments, textbooks, coding challenges and so on",
-      "- Created Rubrics for and Graded 9 assignments and the final exam",
-      "- Answered questions from 100+ students through Campuswire's platform, Email and Direct Message",
+      "- Created Rubrics for and Graded 10+ assignments and 2+ exams",
+      "- Answered questions for 100+ students through Campuswire's platform, emails and direct messages",
     ],
     link: "https://www.jhu.edu/",
   }

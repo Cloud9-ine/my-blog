@@ -1,0 +1,37 @@
+<div>
+
+  <div class="title">
+    <p>{{ description + ":" }}</p>
+  </div>
+
+  <div class="menu">
+    <div class="row top-bar">
+      <p class="item"><b>Title:</b></p>
+      <p class="item"><b>Tags:</b></p>
+      <p class="item"><b>Supported Languages:</b></p>
+      <p class="item"><b>Last Modified Time:</b></p>
+    </div>
+
+    <div class="row content-bar" *ngFor="let nt of notes">
+      <div class="name item">
+        <a [href]="nt.link">
+          <p> {{ nt.title }} </p>
+        </a>
+      </div>
+
+      <div class="tags item">
+        <p *ngFor="let tag of nt.tags"> {{ tag + "&nbsp;&nbsp;" }} </p>
+      </div>
+
+      <div class="lang item">
+        <p *ngFor="let lang of nt.languages"> {{ lang + "&nbsp;&nbsp;" }} </p>
+      </div>
+
+      <div class="time item">
+        <p> {{ nt.update_time }} </p>
+      </div>
+    </div>
+
+  </div>
+
+</div>

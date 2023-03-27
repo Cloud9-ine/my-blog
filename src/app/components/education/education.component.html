@@ -1,24 +1,33 @@
 <div>
   <h3>{{ description + ":"}} </h3>
 
-  <div
-    *ngFor="let edu of educations"
-    class="education"
-  >
+  <div class="block" *ngFor="let edu of educations">
 
-    <a href="{{ edu.link }}">
-      <p><b>{{ edu.school }}</b></p>
-    </a>
+    <div
+      class="education"
+    >
+      <div class="title-row">
+          <a href="{{ edu.link }}">
+            <p><b>{{ edu.school }}</b></p>
+          </a>
 
-    <div class="row">
-      <p>{{ "Degree: " + edu.degree }}</p>
-      <p>{{ edu.start_date + " - " + edu.end_date }}</p>
-    </div>
+        <div class="item">
+          <img [src]="edu.bg_img" [width]=edu.width_logo [height]=edu.height_logo alt="none">
+        </div>
+      </div>
 
-    <div class="row">
-      <p>{{ "Major: " + edu.major }}</p>
-      <p>{{ edu.place }}</p>
+      <div class="row">
+        <p *ngIf=edu.degree><b>{{ edu.degree }}</b></p>
+        <p *ngIf=edu.exchange><b>{{ edu.exchange }}</b></p>
+        <p>{{ edu.start_date + " - " + edu.end_date }}</p>
+      </div>
+
+      <div class="row">
+        <p>{{ "Major: " + edu.major }}</p>
+        <p>{{ edu.place }}</p>
+      </div>
     </div>
 
   </div>
+
 </div>

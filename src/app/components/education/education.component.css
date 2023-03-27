@@ -1,8 +1,14 @@
-.education {
+.block {
   background: ghostwhite;
   margin-bottom: 5px;
   padding: 10px 20px;
   width: 500px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .row {
@@ -10,3 +16,19 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 150px;
+  height: 100px;
+}
+
+/*.education {*/
+/*  background-image: url("../../../assets/jhu_logo.png");*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: 50%;*/
+/*  background-position: top right;*/
+/*  opacity: 1.0;*/
+/*}*/

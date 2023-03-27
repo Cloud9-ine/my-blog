@@ -11,16 +11,20 @@
     </button>
   </div>
 
-  <div *ngIf="display_tag == resumeSec.name">
-    <app-resume [description]='resumeSec.description'></app-resume>
+  <div *ngIf="display_tag == 'Resume'">
+    <app-resume description="My Resume"></app-resume>
+  </div>
+
+  <div *ngIf="display_tag == 'Notes'">
+    <app-notes description="My Notes"></app-notes>
   </div>
 
   <div *ngIf="display_tag == 'Games'">
-    <app-games></app-games>
+    <app-games description="An enthusiastic gamer here!"></app-games>
   </div>
 
   <div *ngIf="display_tag == 'Others'">
-    <h2>Other component to be added!</h2>
+    <h2>New Components Coming Soon!</h2>
   </div>
 
 </div>
